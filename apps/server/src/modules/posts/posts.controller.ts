@@ -1,10 +1,6 @@
 import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { PostsService } from './posts.service';
-import { CreatePostDto } from './dto/create-post.dto';
-import { UpdatePostDto } from './dto/update-post.dto';
-import { BaseController } from '../base/base.controller';
-import { BaseService } from '../base/base.service';
-import { PostModel } from './post.model';
+import { CreatePostDto } from 'types';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtPayload } from '../auth/jwt-payload.type';
 import { Requestor } from '../auth/requestor.decorator';
@@ -14,13 +10,7 @@ import { AuthGuard } from '../auth/auth.guard';
 @ApiBearerAuth('default')
 @UseGuards(AuthGuard)
 export class PostsController {
-  constructor(
-    private readonly postService: BaseService<
-      PostModel,
-      CreatePostDto,
-      UpdatePostDto
-    >,
-  ) {}
+  constructor(private readonly postService: PostsService) {}
 
   @Get()
   async findAllModifined() {

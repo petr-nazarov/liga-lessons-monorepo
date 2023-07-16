@@ -1,0 +1,14 @@
+{
+  "collection": "@nestjs/schematics",
+  "entryFile": "index",
+  "sourceRoot": ".",
+  "compilerOptions": {
+    "assets": [
+      {
+        "include": "package.json",
+        "outDir": "./dist"
+      }
+    ]
+  }
+}
+

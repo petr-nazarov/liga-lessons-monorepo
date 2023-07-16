@@ -1,6 +1,6 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { Request, Response, NextFunction } from 'express';
+import { Response, NextFunction } from 'express';
 import { RequestWithUser } from './request.type';
 import { JwtPayload } from './jwt-payload.type';
 
@@ -9,7 +9,7 @@ export class TokenMiddleware implements NestMiddleware {
   constructor(private readonly jwtService: JwtService) {}
   use(req: any, res: Response, next: NextFunction) {
     const bearerToken = req.headers['authorization'];
-    if (!(bearerToken)) {
+    if (!bearerToken) {
       next();
       return;
     }
