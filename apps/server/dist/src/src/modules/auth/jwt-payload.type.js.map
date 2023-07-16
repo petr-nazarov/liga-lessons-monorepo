@@ -1,1 +1,0 @@
-{"version":3,"file":"jwt-payload.type.js","sourceRoot":"","sources":["../../../../../src/modules/auth/jwt-payload.type.ts"],"names":[],"mappings":"","sourcesContent":["export type JwtPayload = {\n  _id: string;\n  username: string;\n  iat: number;\n  exp: number;\n};\n"]}

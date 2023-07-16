@@ -1,0 +1,1 @@
+{"version":3,"file":"create-post.dto.js","sourceRoot":"","sources":["create-post.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA8C;AAE9C,MAAa,aAAa;CAKzB;AAJC;IAAC,IAAA,qBAAW,GAAE;;2CACD;AAFf,sCAKC","sourcesContent":["import { ApiProperty } from '@nestjs/swagger';\n\nexport class CreatePostDto {\n  @ApiProperty()\n  name: string;\n\n  authorId: string;\n}\n"]}
