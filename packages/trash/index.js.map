@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,0DAAwC;AACxC,0DAAwC","sourcesContent":["export * from './posts/create-post.dto';\nexport * from './posts/update-post.dto';\n"]}

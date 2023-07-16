@@ -1,8 +1,19 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpdatePostDto = exports.CreatePostDto = void 0;
-var create_post_dto_1 = require("./posts/create-post.dto");
-Object.defineProperty(exports, "CreatePostDto", { enumerable: true, get: function () { return create_post_dto_1.CreatePostDto; } });
-var update_post_dto_1 = require("./posts/update-post.dto");
-Object.defineProperty(exports, "UpdatePostDto", { enumerable: true, get: function () { return update_post_dto_1.UpdatePostDto; } });
+__exportStar(require("./posts/create-post.dto"), exports);
+__exportStar(require("./posts/update-post.dto"), exports);
 //# sourceMappingURL=index.js.map

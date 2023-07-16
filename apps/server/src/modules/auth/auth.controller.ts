@@ -21,7 +21,7 @@ export class AuthController {
   @Get('/me')
   @ApiBearerAuth('default')
   @UseGuards(AuthGuard)
-  async me(@Headers() headers, @Requestor() requestor: JwtPayload) {
+  async me(@Requestor() requestor: JwtPayload) {
     return requestor;
     //return await this.authService.me();
   }

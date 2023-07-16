@@ -1,8 +1,9 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Requestor = void 0;
-var common_1 = require("@nestjs/common");
-exports.Requestor = (0, common_1.createParamDecorator)(function (data, ctx) {
-    var request = ctx.switchToHttp().getRequest();
+const common_1 = require("@nestjs/common");
+exports.Requestor = (0, common_1.createParamDecorator)((data, ctx) => {
+    const request = ctx.switchToHttp().getRequest();
     return request.user;
 });
+//# sourceMappingURL=requestor.decorator.js.map
