@@ -9,19 +9,19 @@ export class BaseRepository<TModel, TCreateDto, TUpdateDto> {
   ) {}
 
   async find(filter: any) {
-    return await this.baseModel.find(filter) as TModel[];
+    return (await this.baseModel.find(filter)) as TModel[];
   }
   async create(createDto: TCreateDto) {
     const createdModel = new this.baseModel(createDto);
-    return await createdModel.save() as TModel;
+    return (await createdModel.save()) as TModel;
   }
 
   async findAll() {
-    return await this.baseModel.find() as TModel[];
+    return (await this.baseModel.find()) as TModel[];
   }
 
   async findOne(id: string) {
-    return await this.baseModel.findById(id) as TModel;
+    return (await this.baseModel.findById(id)) as TModel;
   }
 
   async update(id: string, updateDto: TUpdateDto) {

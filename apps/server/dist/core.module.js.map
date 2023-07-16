@@ -1,1 +1,0 @@
-{"version":3,"file":"core.module.js","sourceRoot":"","sources":["../src/core.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAgD;AAChD,qCAAwC;AAWjC,IAAM,UAAU,wBAAhB,MAAM,UAAU;CAAG,CAAA;qBAAb,UAAU;IATtB,IAAA,eAAM,GAAE;IACR,IAAA,eAAM,EAAC;QACN,OAAO,EAAE;YACP,eAAS,CAAC,QAAQ,CAAC;gBACjB,MAAM,EAAE,cAAc;aACvB,CAAC;SACH;QACD,OAAO,EAAE,CAAC,eAAS,CAAC;KACrB,CAAC;GACW,UAAU,CAAG"}

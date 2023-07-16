@@ -1,1 +1,0 @@
-{"version":3,"file":"request.type.js","sourceRoot":"","sources":["../../../../../src/modules/auth/request.type.ts"],"names":[],"mappings":"","sourcesContent":["import { Request } from 'express';\nimport { JwtPayload } from './jwt-payload.type';\n\nexport interface RequestWithUser extends Request {\n  user: JwtPayload;\n}\n"]}
