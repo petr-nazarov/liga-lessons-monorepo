@@ -1,5 +1,4 @@
 import {
-  Controller,
   Get,
   Post,
   Body,
@@ -10,12 +9,11 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { BaseService } from './base.service';
-import { ApiProperty } from '@nestjs/swagger';
 
-export  class BaseController<TModel, TCreateDto, TUpdateDto> {
+export class BaseController<TModel, TCreateDto, TUpdateDto> {
   constructor(
     private readonly baseService: BaseService<TModel, TCreateDto, TUpdateDto>,
-  ) { }
+  ) {}
 
   @Post()
   create(@Body() createDto: TCreateDto) {

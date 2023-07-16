@@ -8,7 +8,7 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import {  AuthDTOSchema, AuthDto } from './dto/auth.dto';
+import { AuthDTOSchema, AuthDto } from './dto/auth.dto';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { Requestor } from './requestor.decorator';
 import { JwtPayload } from './jwt-payload.type';
