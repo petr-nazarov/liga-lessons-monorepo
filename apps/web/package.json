@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 4000",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "buefy": "^0.9.23",
+    "nuxt-buefy": "^0.4.25",
+    "sass": "^1.63.6",
+    "vuetify": "^3.3.8"
+  }
+}
