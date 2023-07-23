@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { CreatePostDto } from 'types';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { JwtPayload } from '../auth/jwt-payload.type';
+import { JwtPayload } from 'types';
 import { Requestor } from '../auth/requestor.decorator';
 import { AuthGuard } from '../auth/auth.guard';
 @Controller('posts')

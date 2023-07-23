@@ -12,12 +12,13 @@
   "devDependencies": {},
   "dependencies": {
     "buefy": "^0.9.23",
+    "jwt-decode": "^3.1.2",
     "nuxt-buefy": "^0.4.25",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.30.2",
     "sass": "^1.63.6",
-    "vuetify": "^3.3.8",
-    "types": "*"
+    "types": "*",
+    "vuetify": "^3.3.8"
   }
 }

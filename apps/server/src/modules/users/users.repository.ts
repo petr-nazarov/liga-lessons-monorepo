@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UserModel } from './user.model';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+import { CreateUserDto } from 'types';
+import { UpdateUserDto } from 'types';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { BaseRepository } from '../base/base.repository';

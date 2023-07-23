@@ -2,7 +2,7 @@ import { Injectable, NestMiddleware } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { Response, NextFunction } from 'express';
 import { RequestWithUser } from './request.type';
-import { JwtPayload } from './jwt-payload.type';
+import { JwtPayload } from 'types';
 
 @Injectable()
 export class TokenMiddleware implements NestMiddleware {

@@ -3,7 +3,7 @@ import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 import { UsersService } from '../users/users.service';
 import { AuthDto } from './dto/auth.dto';
-import { JwtPayload } from './jwt-payload.type';
+import { JwtPayload } from 'types';
 
 const saltOrRounds = 10;
 @Injectable()

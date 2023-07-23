@@ -10,7 +10,7 @@ import { AuthService } from './auth.service';
 import { AuthDTOSchema, AuthDto } from './dto/auth.dto';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { Requestor } from './requestor.decorator';
-import { JwtPayload } from './jwt-payload.type';
+import { JwtPayload } from 'types';
 import { AuthGuard } from './auth.guard';
 @Controller('auth')
 @ApiTags('auth')
