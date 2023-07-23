@@ -105,3 +105,10 @@ debuger
   ## Authz
 
   -- Permission based authz
+
+  ### Homework FE 
+  -- Create a form for auth 
+  -- Create a auth service 
+  -- Create app skeleton 
+  -- In the UI library of choice look at ech component
+
