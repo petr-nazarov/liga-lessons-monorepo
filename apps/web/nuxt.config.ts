@@ -1,9 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  css: ['vuetify/lib/styles/main.sass'],
+  css: [
+    'primevue/resources/themes/saga-blue/theme.css',
+    'primevue/resources/primevue.css',
+    'primeicons/primeicons.css',
+    'primeflex/primeflex.css'
+  ],
   build: {
-    transpile: ['vuetify'],
+    transpile: ['primevue'],
   },
   vite: {
     define: {
