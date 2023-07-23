@@ -16,6 +16,7 @@ import { BaseRepository } from '../base/base.repository';
       provide: BaseService,
       useClass: PostsService,
     },
+    PostsService,
     PostsRepository,
     {
       provide: BaseRepository,
