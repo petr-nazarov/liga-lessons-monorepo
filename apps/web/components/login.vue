@@ -9,26 +9,8 @@
         >Create today!</a
       >
     </div>
-
+    <Form :fields="fields" />
     <div>
-      <label for="email1" class="block text-900 font-medium mb-2">Email</label>
-      <InputText
-        v-model="username"
-        id="email1"
-        type="text"
-        class="w-full mb-3"
-      />
-
-      <label for="password1" class="block text-900 font-medium mb-2"
-        >Password</label
-      >
-      <InputText
-        id="password1"
-        v-model="password"
-        type="password"
-        class="w-full mb-3"
-      />
-
       <Button
         label="Sign In"
         icon="pi pi-user"
@@ -46,8 +28,24 @@ export default defineComponent({
   name: 'Login',
   data() {
     return {
-      username: 'username',
-      password: 'password',
+      fields: [
+        {
+          name: 'username',
+          value: 'username',
+          type: 'text',
+          label: 'Username',
+          placeholder: 'Username',
+          required: true,
+        },
+        {
+          name: 'password',
+          value: '',
+          type: 'text',
+          label: 'Password',
+          placeholder: 'Password',
+          required: true,
+        },
+      ],
     };
   },
   methods: {

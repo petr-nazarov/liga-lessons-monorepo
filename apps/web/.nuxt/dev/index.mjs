@@ -7,7 +7,6 @@ import { parentPort, threadId } from 'node:worker_threads';
 import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery as getQuery$1, createError } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { stringify, uneval } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/devalue/index.js';
-import { renderToString } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/vue/server-renderer/index.mjs';
 import { createFetch as createFetch$1, Headers } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/ofetch/dist/node.mjs';
 import destr from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/destr/dist/index.mjs';
 import { createCall, createFetch } from 'file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/unenv/runtime/fetch/index.mjs';
@@ -804,32 +803,7 @@ globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
 const getClientManifest = () => import('/home/nazarov/Projects/Personal/Liga/lessons/monorepo/apps/web/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/home/nazarov/Projects/Personal/Liga/lessons/monorepo/apps/web/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
-const getSSRRenderer = lazyCachedFunction(async () => {
-  const manifest = await getClientManifest();
-  if (!manifest) {
-    throw new Error("client.manifest is not available");
-  }
-  const createSSRApp = await getServerEntry();
-  if (!createSSRApp) {
-    throw new Error("Server bundle is not available");
-  }
-  const options = {
-    manifest,
-    renderToString: renderToString$1,
-    buildAssetsURL
-  };
-  const renderer = createRenderer(createSSRApp, options);
-  async function renderToString$1(input, context) {
-    const html = await renderToString(input, context);
-    if (process.env.NUXT_VITE_NODE_OPTIONS) {
-      renderer.rendererContext.updateManifest(await getClientManifest());
-    }
-    return `<${appRootTag} id="${appRootId}">${html}</${appRootTag}>`;
-  }
-  return renderer;
-});
 const getSPARenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   const spaTemplate = await Promise.resolve().then(function () { return _virtual__spaTemplate; }).then((r) => r.template).catch(() => "");
@@ -887,7 +861,7 @@ const renderer = defineRenderHandler(async (event) => {
     url,
     event,
     runtimeConfig: useRuntimeConfig(),
-    noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false || (false),
+    noSSR: !!true   ,
     error: !!ssrError,
     nuxt: void 0,
     /* NuxtApp */
@@ -895,7 +869,7 @@ const renderer = defineRenderHandler(async (event) => {
     _payloadReducers: {},
     islandContext
   };
-  const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
+  const renderer = await getSPARenderer() ;
   const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
     if (ssrContext._renderResponse && error.message === "skipping render") {
       return {};
@@ -1009,7 +983,7 @@ function renderPayloadJsonScript(opts) {
   const attrs = [
     'type="application/json"',
     `id="${opts.id}"`,
-    `data-ssr="${!(opts.ssrContext.noSSR)}"`,
+    `data-ssr="${!(true )}"`,
     opts.src ? `data-src="${opts.src}"` : ""
   ].filter(Boolean);
   const contents = opts.data ? stringify(opts.data, opts.ssrContext._payloadReducers) : "";

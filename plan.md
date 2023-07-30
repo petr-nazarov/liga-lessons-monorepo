@@ -80,7 +80,7 @@ debuger
 - Write test for login functions
 - Write test for FORBIDDEN routes
 - Write test for Allowed routes
-- Write a decorator for controller methods using  zod validating a dto
+- Write a decorator for controller methods using zod validating a dto
 
 - User register/login (no repository pattern)
   -- repository
@@ -106,9 +106,9 @@ debuger
 
   -- Permission based authz
 
-  ### Homework FE 
-  -- Create a form for auth 
-  -- Create a auth service 
-  -- Create app skeleton 
-  -- In the UI library of choice look at ech component
+  ### Homework FE
 
+  -- Create a form for auth
+  -- Create a auth service
+  -- Create app skeleton
+  -- In the UI library of choice look at ech component
