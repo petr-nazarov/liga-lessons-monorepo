@@ -14,6 +14,11 @@ export class BaseCrudService {
       },
       body: JSON.stringify(body),
     });
-    return (await res.json()) as ResBody;
+    if (res.ok) {
+      return (await res.json()) as ResBody;
+    } else {
+      const json = await res.json();
+      throw new Error(json.message)
+    }
   }
 }

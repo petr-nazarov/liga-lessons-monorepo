@@ -9,20 +9,13 @@
         >Create today!</a
       >
     </div>
-    <Form :fields="fields" />
-    <div>
-      <Button
-        label="Sign In"
-        icon="pi pi-user"
-        class="w-full"
-        @click="login"
-      ></Button>
-    </div>
+    <Form :fields="fields" :actions="actions" />
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { AuthService } from '../services/auth.service';
+import { CreateUserDto } from 'types';
 const authService = new AuthService();
 export default defineComponent({
   name: 'Login',
@@ -46,12 +39,20 @@ export default defineComponent({
           required: true,
         },
       ],
+      actions: [
+        {
+          label: 'Sign In',
+          icon: 'pi pi-user',
+          type: 'success',
+          action: async <CreateUserDto>(data) => {
+            await authService.login(data);
+          },
+        },
+      ],
     };
   },
   methods: {
-    login() {
-      authService.login({ username: this.username, password: this.password });
-    },
+    login() {},
   },
 });
 </script>

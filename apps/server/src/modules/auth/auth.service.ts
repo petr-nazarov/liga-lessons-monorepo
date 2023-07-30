@@ -31,7 +31,7 @@ export class AuthService {
     const user = users[0];
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      throw new Error('Invalid password');
+      throw new UnauthorizedException('Invalid password');
     }
     const iat = new Date().getTime();
     const exp = iat + 1000 * 60 * 60 * 24 * 2;
