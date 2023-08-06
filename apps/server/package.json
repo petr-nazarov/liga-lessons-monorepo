@@ -8,12 +8,13 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
-    "dev": "nest start --watch",
+    "start": "yarn doppler nest start",
+    "dev": "APP_ENV=local yarn doppler nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest -c jest.config.ts"
+    "test": "APP_ENV=test yarn doppler jest -c jest.config.ts",
+    "doppler": "doppler -p app_server -c ${APP_ENV} run -- "
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",

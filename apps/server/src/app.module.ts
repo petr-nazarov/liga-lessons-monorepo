@@ -7,10 +7,10 @@ import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { TokenMiddleware } from './modules/auth/token.middleware';
 import { CoreModule } from './core.module';
-
+import { conf } from './conf';
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://root:password@localhost:7500'),
+    MongooseModule.forRoot(conf.db.uri),
     CoreModule,
     PostsModule,
     UsersModule,

@@ -1,11 +1,11 @@
 import { Global, Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
-
+import { conf } from './conf';
 @Global()
 @Module({
   imports: [
     JwtModule.register({
-      secret: 'secret123432',
+      secret: conf.auth.secret,
     }),
   ],
   exports: [JwtModule],

@@ -6,7 +6,12 @@
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "doppler": "doppler -p app_server -c ${APP_ENV} run -- ",
+    "env:local:up": "APP_ENV=local yarn doppler docker compose up -d",
+    "env:local:down": "APP_ENV=local yarn doppler docker compose down ",
+    "env:test:up": "APP_ENV=test yarn doppler docker compose up -d",
+    "env:test:down": "APP_ENV=test yarn doppler docker compose down"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
