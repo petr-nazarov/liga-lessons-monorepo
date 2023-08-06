@@ -1,1 +1,0 @@
-export { default } from "file:///home/nazarov/Projects/Personal/Liga/lessons/monorepo/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
