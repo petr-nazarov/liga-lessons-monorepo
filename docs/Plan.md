@@ -145,10 +145,9 @@
 - JSON generated forms
 - E2E tests with cyprus
 - Local storage and Index DB
-- Light House, FE performance 
+- Light House, FE performance
   - https://www.youtube.com/watch?v=0fONene3OIA
 - Packaging as a mobile app
-
 
 ### Practice Module 4
 
@@ -159,15 +158,18 @@
 - CI E2E test
 
 ## Module 5 - Life after birth
+
 ### Module 5 Theory
-- Logging 
-- Backups 
+
+- Logging
+- Backups
 - Reporting
-- Metrics 
-- IAC 
-  - Terraform 
-  - Pulumi 
-- Red/Blue deployment 
-- Parallel CI/CD 
-- K8s and highload scaling 
-- Multisite 
+- Publishing documentation: TSDoc
+- Metrics
+- IAC
+  - Terraform
+  - Pulumi
+- Red/Blue deployment
+- Parallel CI/CD
+- K8s and highload scaling
+- Multisite
