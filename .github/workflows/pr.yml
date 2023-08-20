@@ -28,6 +28,10 @@ jobs:
             node_modules-master-
             node_modules-main
             node_modules-
+
+      - name: Install dependencies
+        #if: ${{ steps.cache-dependencies.outputs.cache-hit != 'true'  }}
+        run: yarn 
       
       - name: Lint
         run: yarn lint
