@@ -30,7 +30,7 @@ jobs:
             node_modules-
 
       - name: Install dependencies
-        #if: ${{ steps.cache-dependencies.outputs.cache-hit != 'true'  }}
+        if: ${{ steps.cache-dependencies.outputs.cache-hit != 'true'  }}
         run: yarn 
       
       - name: Lint
