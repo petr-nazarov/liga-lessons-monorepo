@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
     - uses: superfly/flyctl-actions/setup-flyctl@master
     - run: cd apps/server
     - run: flyctl deploy --remote-only --image  ghcr.io/petr-nazarov/liga-lessons-monorepo/server:${{inputs.version}}
