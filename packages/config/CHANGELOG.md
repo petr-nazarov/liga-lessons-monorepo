@@ -1,5 +1,11 @@
 # config
 
+## 1.0.15
+
+### Patch Changes
+
+- a2dbf88: Yes
+
 ## 1.0.14
 
 ### Patch Changes

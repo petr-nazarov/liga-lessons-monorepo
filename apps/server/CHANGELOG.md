@@ -1,5 +1,14 @@
 # server
 
+## 1.0.15
+
+### Patch Changes
+
+- a2dbf88: Yes
+- Updated dependencies [a2dbf88]
+  - config@1.0.15
+  - types@1.0.15
+
 ## 1.0.14
 
 ### Patch Changes
