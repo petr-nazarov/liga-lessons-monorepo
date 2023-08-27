@@ -3,7 +3,7 @@
   "description": "",
   "author": "",
   "private": true,
-  "version": "1.0.19",
+  "version": "1.0.20",
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
