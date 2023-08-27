@@ -1,5 +1,13 @@
 # types
 
+## 1.0.29
+
+### Patch Changes
+
+- 47f134c: qqq
+- Updated dependencies [47f134c]
+  - config@1.0.29
+
 ## 1.0.28
 
 ### Patch Changes
