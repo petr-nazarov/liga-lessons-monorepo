@@ -1,5 +1,11 @@
 # config
 
+## 1.0.23
+
+### Patch Changes
+
+- 6e397a5: test flow
+
 ## 1.0.22
 
 ### Patch Changes
