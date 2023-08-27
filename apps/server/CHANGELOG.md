@@ -1,5 +1,14 @@
 # server
 
+## 1.0.11
+
+### Patch Changes
+
+- a87d94a: test
+- Updated dependencies [a87d94a]
+  - config@1.0.11
+  - types@1.0.11
+
 ## 1.0.10
 
 ### Patch Changes

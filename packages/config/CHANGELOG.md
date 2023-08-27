@@ -1,5 +1,11 @@
 # config
 
+## 1.0.11
+
+### Patch Changes
+
+- a87d94a: test
+
 ## 1.0.10
 
 ### Patch Changes
