@@ -1,5 +1,13 @@
 # web
 
+## 1.0.21
+
+### Patch Changes
+
+- a9ea2a4: Release working
+- Updated dependencies [a9ea2a4]
+  - types@1.0.21
+
 ## 1.0.20
 
 ### Patch Changes
