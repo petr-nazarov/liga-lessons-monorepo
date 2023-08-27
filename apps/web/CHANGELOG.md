@@ -1,5 +1,13 @@
 # web
 
+## 1.0.25
+
+### Patch Changes
+
+- 2f6ed30: YY
+- Updated dependencies [2f6ed30]
+  - types@1.0.25
+
 ## 1.0.24
 
 ### Patch Changes
