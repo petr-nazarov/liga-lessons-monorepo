@@ -1,8 +1,8 @@
 name: Before closing pull request
 on:
   push:
-    tags:
-      - server@*
+    tags: 
+      # - server@*
 jobs:
   publish-artifacts:
     runs-on: ubuntu-latest
