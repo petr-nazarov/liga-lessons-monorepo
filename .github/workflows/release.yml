@@ -2,6 +2,7 @@ name: Release
 on:
   push:
     tags:
+      - '*'
 jobs:
   publish-server-artifacts:
     name: Publish server docker image to container registry
