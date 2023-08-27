@@ -13,6 +13,7 @@ jobs:
     environment: prod
     steps:
     - uses: superfly/flyctl-actions/setup-flyctl@master
+    - run: cd apps/server
     - run: flyctl deploy --remote-only --image  ghcr.io/petr-nazarov/liga-lessons-monorepo/server:${{inputs.version}}
       env:
         FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
