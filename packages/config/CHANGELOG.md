@@ -1,5 +1,11 @@
 # config
 
+## 1.0.12
+
+### Patch Changes
+
+- e516ea5: Add docker publish test
+
 ## 1.0.11
 
 ### Patch Changes

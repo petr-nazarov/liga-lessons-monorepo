@@ -1,5 +1,13 @@
 # web
 
+## 1.0.12
+
+### Patch Changes
+
+- e516ea5: Add docker publish test
+- Updated dependencies [e516ea5]
+  - types@1.0.12
+
 ## 1.0.11
 
 ### Patch Changes
