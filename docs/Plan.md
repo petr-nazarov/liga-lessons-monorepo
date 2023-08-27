@@ -129,8 +129,13 @@
   - lint
   - test
   - cache
+  - gh actions
 - CD flow:
-  - version bump
+  - version bump:
+    - conventional commits 
+      - https://www.conventionalcommits.org/en/v1.0.0/
+    - changesets 
+        https://github.com/changesets/changesets
   - dockerize
   - publish on docker registry
   - deploy image to server

@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
+  "version": "1.0.5",
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
