@@ -1,0 +1,11 @@
+.git
+.github
+.DS_Storea
+.db/*
+out/*
+node_modules/*
+npm-debug.log
+Dockerfile*
+docker-compose*
+README.md
+.vscode/*
