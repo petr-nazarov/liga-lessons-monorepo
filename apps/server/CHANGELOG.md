@@ -1,5 +1,14 @@
 # server
 
+## 1.0.27
+
+### Patch Changes
+
+- 7686f57: YY
+- Updated dependencies [7686f57]
+  - config@1.0.27
+  - types@1.0.27
+
 ## 1.0.26
 
 ### Patch Changes
