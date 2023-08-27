@@ -1,5 +1,13 @@
 # web
 
+## 1.0.13
+
+### Patch Changes
+
+- 7cd92e4: Test deploy
+- Updated dependencies [7cd92e4]
+  - types@1.0.13
+
 ## 1.0.12
 
 ### Patch Changes
