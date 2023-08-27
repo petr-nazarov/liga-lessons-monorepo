@@ -1,5 +1,13 @@
 # types
 
+## 1.0.26
+
+### Patch Changes
+
+- f0d6568: AA
+- Updated dependencies [f0d6568]
+  - config@1.0.26
+
 ## 1.0.25
 
 ### Patch Changes

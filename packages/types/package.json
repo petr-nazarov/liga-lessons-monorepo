@@ -1,7 +1,7 @@
 {
   "name": "types",
   "private": true,
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Nest TypeScript starter repository",
   "main": "dist/src/index.js",
   "scripts": {

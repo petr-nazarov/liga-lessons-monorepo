@@ -1,5 +1,11 @@
 # config
 
+## 1.0.26
+
+### Patch Changes
+
+- f0d6568: AA
+
 ## 1.0.25
 
 ### Patch Changes
