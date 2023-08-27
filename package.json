@@ -6,6 +6,7 @@
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
+    "version-bump": "changeset version",
     "clean:dist": "rm -rf apps/*/dist && rm -rf packages/*/dist",
     "clean:node_modules": "rm -rf apps/*/node_modules && rm -rf packages/*/node_modules",
     "clean": "yarn clean:dist && yarn clean:node_modules",
@@ -17,6 +18,7 @@
     "env:test:down": "APP_ENV=test yarn doppler docker compose down"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
@@ -52,5 +54,6 @@
   "resolutions": {
     "wrap-ansi": "7.0.0",
     "string-width": "4.1.0"
-  }
+  },
+  "version": "0.0.2"
 }
