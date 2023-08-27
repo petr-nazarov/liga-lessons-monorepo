@@ -12,11 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
     - uses: superfly/flyctl-actions/setup-flyctl@master
-    - run: cd apps/server
-    - run: pwd
     - run: flyctl deploy --remote-only --image  ghcr.io/petr-nazarov/liga-lessons-monorepo/server:${{inputs.version}} -a liga-lessons-monorepo-server
       env:
         FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
