@@ -16,7 +16,7 @@ jobs:
             echo "Commit message starts with RELEASING. Triggering the workflow."
           else
             echo "Commit message doesn't start with RELEASING. Skipping the workflow."
-            exit 78  # Skip the workflow
+            exit 78  # Skip the workflow for this run
           fi
   publish-server-artifacts:
     name: Publish server docker image to container registry
