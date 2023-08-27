@@ -1,5 +1,13 @@
 # web
 
+## 1.0.28
+
+### Patch Changes
+
+- 78e45fa: y
+- Updated dependencies [78e45fa]
+  - types@1.0.28
+
 ## 1.0.27
 
 ### Patch Changes
