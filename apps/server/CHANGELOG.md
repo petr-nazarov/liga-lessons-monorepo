@@ -1,5 +1,13 @@
 # server
 
+## 1.0.31
+
+### Patch Changes
+
+- 22bbfab: Add suppirt for json import
+- Updated dependencies [22bbfab]
+  - config@1.0.30
+
 ## 1.0.30
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # config
 
+## 1.0.30
+
+### Patch Changes
+
+- 22bbfab: Add suppirt for json import
+
 ## 1.0.29
 
 ### Patch Changes
