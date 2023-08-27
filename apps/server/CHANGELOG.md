@@ -1,5 +1,12 @@
 # server
 
+## 1.0.30
+
+### Patch Changes
+
+- 596ba2a: You can now get server version on index route
+- 0c467f3: You can now see current time on home route
+
 ## 1.0.29
 
 ### Patch Changes
