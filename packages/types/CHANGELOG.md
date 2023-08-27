@@ -1,5 +1,13 @@
 # types
 
+## 1.0.22
+
+### Patch Changes
+
+- b0d8999: Working relase and deploy flows
+- Updated dependencies [b0d8999]
+  - config@1.0.22
+
 ## 1.0.21
 
 ### Patch Changes
