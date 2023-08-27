@@ -1,5 +1,11 @@
 # config
 
+## 1.0.19
+
+### Patch Changes
+
+- e135652: A
+
 ## 1.0.18
 
 ### Patch Changes
