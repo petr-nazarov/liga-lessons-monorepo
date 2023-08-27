@@ -3,6 +3,7 @@
   "display": "Default",
   "compilerOptions": {
     "module": "commonjs",
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "composite": false,
     "declaration": true,
