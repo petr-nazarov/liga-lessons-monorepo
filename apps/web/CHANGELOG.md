@@ -1,5 +1,13 @@
 # web
 
+## 1.0.14
+
+### Patch Changes
+
+- d285d72: try
+- Updated dependencies [d285d72]
+  - types@1.0.14
+
 ## 1.0.13
 
 ### Patch Changes
