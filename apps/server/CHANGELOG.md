@@ -1,5 +1,14 @@
 # server
 
+## 1.0.7
+
+### Patch Changes
+
+- Testing version bump
+- Updated dependencies
+  - config@1.0.7
+  - types@1.0.7
+
 ## 1.0.6
 
 ### Patch Changes

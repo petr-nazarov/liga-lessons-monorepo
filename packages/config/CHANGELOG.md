@@ -1,5 +1,11 @@
 # config
 
+## 1.0.7
+
+### Patch Changes
+
+- Testing version bump
+
 ## 1.0.6
 
 ### Patch Changes
