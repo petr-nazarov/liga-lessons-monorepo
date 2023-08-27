@@ -16,6 +16,7 @@ export class AppController {
   index() {
     return {
       version: packageJson.version,
+      current_time: Date.now(),
     };
   }
 }
