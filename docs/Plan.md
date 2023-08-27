@@ -136,6 +136,7 @@
       - https://www.conventionalcommits.org/en/v1.0.0/
     - changesets 
         https://github.com/changesets/changesets
+        https://www.youtube.com/watch?v=vO80X5zM8_Y
   - dockerize
   - publish on docker registry
   - deploy image to server

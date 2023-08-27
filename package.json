@@ -6,7 +6,7 @@
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "version-bump": "changeset version",
+    "release": "changeset && changeset version && changeset publish",
     "clean:dist": "rm -rf apps/*/dist && rm -rf packages/*/dist",
     "clean:node_modules": "rm -rf apps/*/node_modules && rm -rf packages/*/node_modules",
     "clean": "yarn clean:dist && yarn clean:node_modules",
