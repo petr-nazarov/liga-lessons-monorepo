@@ -1,5 +1,11 @@
 # config
 
+## 1.0.10
+
+### Patch Changes
+
+- c032205: test
+
 ## 1.0.9
 
 ### Patch Changes

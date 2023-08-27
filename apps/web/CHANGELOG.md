@@ -1,5 +1,13 @@
 # web
 
+## 1.0.10
+
+### Patch Changes
+
+- c032205: test
+- Updated dependencies [c032205]
+  - types@1.0.10
+
 ## 1.0.9
 
 ### Patch Changes
