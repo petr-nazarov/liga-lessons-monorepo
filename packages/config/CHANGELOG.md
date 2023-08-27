@@ -1,5 +1,11 @@
 # config
 
+## 1.0.16
+
+### Patch Changes
+
+- 551a9d4: test
+
 ## 1.0.15
 
 ### Patch Changes
