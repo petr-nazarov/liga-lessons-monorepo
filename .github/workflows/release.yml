@@ -31,8 +31,6 @@ jobs:
       packages: write 
       id-token: write
     steps:
-      - name: print 
-        run:  echo ${{needs.job1.outputs.isRelease}} 
       - name: Checkout
         uses: actions/checkout@v3
           
