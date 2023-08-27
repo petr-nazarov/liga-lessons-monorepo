@@ -6,7 +6,8 @@
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "release": "changeset && changeset version && changeset tag && git push --follow-tags",
+    "doc_changes": "changeset add",
+    "release": "changeset version && changeset tag && git push --follow-tags",
     "clean:dist": "rm -rf apps/*/dist && rm -rf packages/*/dist",
     "clean:node_modules": "rm -rf apps/*/node_modules && rm -rf packages/*/node_modules",
     "clean": "yarn clean:dist && yarn clean:node_modules",
@@ -54,6 +55,5 @@
   "resolutions": {
     "wrap-ansi": "7.0.0",
     "string-width": "4.1.0"
-  },
-  "version": "0.0.2"
+  }
 }
