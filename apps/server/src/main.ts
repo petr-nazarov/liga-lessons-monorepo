@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, Logger } from '@nestjs/common';
 
 const swaggerSetup = (app: INestApplication) => {
   const config = new DocumentBuilder()
@@ -23,9 +23,13 @@ const swaggerSetup = (app: INestApplication) => {
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const port = process.env.PORT || 3000;
   swaggerSetup(app);
   app.enableCors();
-  await app.listen(3000);
+  await app.listen(port, '0.0.0.0', () => {
+    Logger.log(`Server running on http://0.0.0.0:${port}`, 'Bootstrap');
+  });
 }
+
 
 bootstrap();
