@@ -1,7 +1,7 @@
 name: Before closing pull request
 on:
   push:
-    tags: [*@*.*.*]
+    tags:
 jobs:
   publish-server-artifacts:
     name: Publish server docker image to container registry
