@@ -1,0 +1,21 @@
+name: Deployment
+concurrency: prod
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        description: 'version to deploy in the format of v1.1.1'
+        default: 'latest'
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+    - uses: superfly/flyctl-actions/setup-flyctl@master
+    - run: flyctl deploy --remote-only --image  ghcr.io/petr-nazarov/liga-lessons-monorepo/server:${{inputs.version}}
+      env:
+        FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+        
+

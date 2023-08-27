@@ -1,13 +1,13 @@
-# fly.toml app configuration file generated for liga-lessons-monorepo on 2023-08-20T19:00:25Z
+# fly.toml app configuration file generated for liga-lessons-monorepo-server on 2023-08-27T12:12:22Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "liga-lessons-monorepo"
+app = "liga-lessons-monorepo-server"
 primary_region = "ams"
 
 [build]
-  image = "ghcr.io/petr-nazarov/liga-lessons-monorepo:latest"
+  image = "ghcr.io/petr-nazarov/liga-lessons-monorepo/server:latest"
 
 [http_service]
   internal_port = 80
