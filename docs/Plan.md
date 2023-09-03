@@ -150,7 +150,7 @@
 - DI Pattern for services
 - JSON generated forms
 
->>- FE tests:  
+- FE tests:  
     - Cypress:
         - E2E testing https://www.youtube.com/watch?v=u8vMu7viCm8 
         - Component testing
@@ -158,6 +158,8 @@
 - Component architecture: 
     - Storybook
 - I18
+    - https://lokalise.com/
+    - https://crowdin.com/
 - Local storage and Index DB
 - Light House, FE performance
   - https://www.youtube.com/watch?v=0fONene3OIA
@@ -176,10 +178,20 @@
 ### Module 5 Theory
 
 - Logging
-- Backups
+  - Machine logs 
+        Aggregators: DataDog LogsIO (runs with linux daemons) 
+  - App level 
+        Sentry
+         - Alert 
+  - HTTP logging (request logging) 
+  - Log replay mechanism  
+  - ORM diff stores 
+
+>>- Backups
 - Reporting
 - Publishing documentation: TSDoc
 - Metrics
+- Caching strategies
 - IAC
   - Terraform
   - Pulumi
