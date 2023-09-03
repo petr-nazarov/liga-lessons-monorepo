@@ -129,6 +129,7 @@ jobs:
         with:
           build: yarn build
           start: yarn dev
+          project: ./apps/web
             #record: true
         env:
           #CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
