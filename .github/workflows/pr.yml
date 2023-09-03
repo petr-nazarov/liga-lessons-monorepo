@@ -1,4 +1,4 @@
-name: Before closing pull request
+name: Tests
 on:
   pull_request:
   push:

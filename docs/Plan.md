@@ -149,7 +149,15 @@
 - Front end frameworks and metaframeworks
 - DI Pattern for services
 - JSON generated forms
-- E2E tests with cyprus
+
+>>- FE tests:  
+    - Cypress:
+        - E2E testing https://www.youtube.com/watch?v=u8vMu7viCm8 
+        - Component testing
+    - Selenium
+- Component architecture: 
+    - Storybook
+- I18
 - Local storage and Index DB
 - Light House, FE performance
   - https://www.youtube.com/watch?v=0fONene3OIA
