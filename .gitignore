@@ -2,8 +2,13 @@
 
 apps/*/dist 
 apps/*/.turbo 
+apps/*/.nuxt
 packages/*/dist 
 packages/*/.turbo 
+packages/*/.nuxt
+
+apps/*/cypress/videos
+apps/*/cypress/screenshots
 
 # dependencies
 node_modules

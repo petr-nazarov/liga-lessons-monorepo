@@ -1,6 +1,6 @@
 <template>
   <div v-if="isLoggedIn">You are logged in</div>
-  <div v-else>Please <NuxtLink to="/auth"> login</NuxtLink></div>
+  <div v-else>Please <NuxtLink id="loginLink" to="/auth"> login</NuxtLink></div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

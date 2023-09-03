@@ -24,10 +24,11 @@ const swaggerSetup = (app: INestApplication) => {
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const port = process.env.PORT || 3000;
+  const host = process.env.HOST || 'localhost';
   swaggerSetup(app);
   app.enableCors();
-  await app.listen(port, '0.0.0.0', () => {
-    Logger.log(`Server running on http://0.0.0.0:${port}`, 'Bootstrap');
+  await app.listen(port, host, () => {
+    Logger.log(`Server running on http://${host}:${port}`, 'Bootstrap');
   });
 }
 
