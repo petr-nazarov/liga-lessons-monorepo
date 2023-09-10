@@ -20,8 +20,7 @@
   - writing ssh keys to VDS
 
 - Vscode
-
-  - Installing vscode
+- Installing vscode
   - Connecting vscode to remote by ssh
 
 - NVM/FNM
@@ -199,3 +198,5 @@
 - Parallel CI/CD
 - K8s and highload scaling
 - Multisite
+- VPC
+- Dependabod
