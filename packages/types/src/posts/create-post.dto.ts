@@ -4,5 +4,5 @@ export class CreatePostDto {
   @ApiProperty()
   name: string;
 
-  authorId: string;
+  authorId: any;
 }

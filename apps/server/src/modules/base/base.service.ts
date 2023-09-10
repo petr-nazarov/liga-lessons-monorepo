@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { BaseRepository } from './base.repository';
+import { FindPaginatedInput, FindPaginatedResult } from 'types';
 @Injectable()
 export class BaseService<TModel, TCreateDto, TUpdateDto> {
   constructor(
@@ -10,6 +11,11 @@ export class BaseService<TModel, TCreateDto, TUpdateDto> {
     >,
   ) {}
 
+  async findPaginated(
+    input: FindPaginatedInput<TModel>,
+  ): Promise<FindPaginatedResult<TModel>> {
+    return await this.baseRepository.findPaginated(input);
+  }
   async find(filter: any) {
     return await this.baseRepository.find(filter);
   }
