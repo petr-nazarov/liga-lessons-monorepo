@@ -2,8 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { BaseModel } from './base.model';
-import { FindPaginatedInput } from 'types';
-import { FindPaginatedResult } from 'types';
+import { FindPaginatedInput, FindPaginatedResult } from 'types';
 @Injectable()
 export class BaseRepository<TModel, TCreateDto, TUpdateDto> {
   constructor(

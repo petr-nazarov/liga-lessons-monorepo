@@ -21,6 +21,7 @@ export class PostsController {
 
   @Get()
   async getPaginated(@Query() query: FindPaginatedInput<CreatePostDto>) {
+    console.log(query);
     const posts = await this.postService.findPaginated(query);
     return posts;
   }
