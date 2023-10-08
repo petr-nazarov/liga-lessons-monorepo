@@ -38,6 +38,9 @@ jobs:
   test-api:
     runs-on: ubuntu-latest
     needs: lint
+    strategy:
+      matrix:
+        chunk: [1, 2]
     env:
       DOPPLER_TOKEN: ${{ secrets.DOPPLER_TOKEN }}
     steps:
@@ -78,7 +81,7 @@ jobs:
         run: yarn env:test:up
       
       - name: Run test
-        run: yarn test
+        run: yarn test:chunk:${{ matrix.chunk }}
       
       - name: Tear down tes env
         run: yarn env:test:down
