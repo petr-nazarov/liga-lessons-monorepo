@@ -7,6 +7,9 @@ export type Meta<TModel> = {
   sortOrder: 'ASC' | 'DESC';
 };
 export type FindPaginatedInput<TModel> = {
+  /** 
+   * This is meta for input 
+   */
   meta?: Partial<Meta<TModel>>;
   filter?: {
     [key in keyof TModel]?: TModel[key];

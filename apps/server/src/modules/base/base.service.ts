@@ -11,7 +11,15 @@ export class BaseService<TModel, TCreateDto, TUpdateDto> {
     >,
   ) {}
 
+  /**
+   * This descibes the function
+   * @returns result in format of data and meta
+   * @example findPaginated({meta: {limit: 10, page: 1}, filter: {}})
+   */
   async findPaginated(
+    /**
+      * This is the input for the function
+      */
     input: FindPaginatedInput<TModel>,
   ): Promise<FindPaginatedResult<TModel>> {
     return await this.baseRepository.findPaginated(input);
