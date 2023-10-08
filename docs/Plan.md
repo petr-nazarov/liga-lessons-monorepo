@@ -187,16 +187,16 @@
   - ORM diff stores 
 
 >>- Backups
+- Parallel CI/CD
+- Dependabod
 - Reporting
 - Publishing documentation: TSDoc
 - Metrics
 - Caching strategies
+- Red/Blue deployment
 - IAC
   - Terraform
   - Pulumi
-- Red/Blue deployment
-- Parallel CI/CD
 - K8s and highload scaling
 - Multisite
 - VPC
-- Dependabod
