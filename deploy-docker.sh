@@ -6,7 +6,7 @@
 export APP=${1}
 export DOCKER_NAME=ghcr.io/petr-nazarov/liga-lessons-monorepo
 export TAG=latest
-export DOPPLER_TOKEN=dp.pt.GSM3HAFphSd4s3CvMpz9fhUjFTkxNhOlfG6PCJxUiMb
+export DOPPLER_TOKEN=dp.pt.PcTdUDg2aqIQwT7sDVYR2jpHBJi3WO0zvyFhaRoqzQz
 
 # build
 #docker build --platform linux/amd64 -t $DOCKER_NAME  -f ./apps/${APP}/Dockerfile .
